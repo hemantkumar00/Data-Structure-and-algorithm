@@ -11,7 +11,7 @@ public class GenericLinkedList<E> {
 	}
 	
 	Node head;
-	void add(E data) {
+	public void add(E data) {
 		Node add = new Node(data);
 		Node temp = head;
 		if(head == null) {
@@ -30,6 +30,33 @@ public class GenericLinkedList<E> {
 			System.out.println(temp.data);
 			temp = temp.next;
 		}
+	}
+	public void delete() {
+		if(head==null) {
+			return ;
+		}
+		Node temp = head;
+		if(temp.next==null) {
+			System.out.println(head.data);
+			head= null;
+		}
+		else {
+		while(temp.next.next!=null) {
+			temp = temp.next;
+		}
+		System.out.println(temp.next.data);
+		temp.next = null;}
+	}
+	public void find() {
+		if(head==null) {
+			return ;
+		}
+		Node temp = head;
+		while(temp.next!=null) {
+			temp = temp.next;
+		}
+		System.out.println(temp.data);
+		//head = head.next;
 	}
 
 }

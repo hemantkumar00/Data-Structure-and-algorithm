@@ -7,10 +7,10 @@ public class ArrayListBasic {
 		//Basic implementation of arrayList in java
 		
 		//This is without Generic which may cause problem in this you have to give condition 
-		ArrayList fruits = new ArrayList();
-		
-		fruits.add("Apple");
-		fruits.add(23);
+//		ArrayList fruits = new ArrayList();
+//		
+//		fruits.add("Apple");
+//		fruits.add(23);
 		
 		//System.out.println(fruits);
 		
@@ -36,7 +36,7 @@ public class ArrayListBasic {
 //		System.out.println(fruit.set(1,"Papaya"));
 //		System.out.println(fruit);
 //		
-		Pair<String ,Integer> p1 = new Pair("Hemant", 20);
+		//Pair<String ,Integer> p1 = new Pair("Hemant", 20);
 		//p1.GetDescription();
 	}
 

@@ -12,7 +12,7 @@ public class CircularSingleLL {
 	Node head;
 	Node tail;
 	public void add(int data) {
-		Node temp = head;
+		//Node temp = head;
 		Node add = new Node(data);
 		if(head==null) {
 			head = tail = add;
